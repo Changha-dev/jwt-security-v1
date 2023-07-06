@@ -1,4 +1,4 @@
-package com.example.jwtv1;
+package com.example.jwtv1.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

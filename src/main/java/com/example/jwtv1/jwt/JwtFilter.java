@@ -1,7 +1,7 @@
-package com.example.jwtv1;
+package com.example.jwtv1.jwt;
 
+import com.example.jwtv1.service.MemberService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

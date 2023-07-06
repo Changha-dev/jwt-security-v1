@@ -1,13 +1,12 @@
-package com.example.jwtv1;
+package com.example.jwtv1.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class LoginRequest {
+public class LoginDto {
     private String username;
 }

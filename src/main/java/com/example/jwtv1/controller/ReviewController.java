@@ -1,4 +1,4 @@
-package com.example.jwtv1;
+package com.example.jwtv1.controller;
 
 
 import org.springframework.http.ResponseEntity;

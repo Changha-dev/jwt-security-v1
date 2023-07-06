@@ -1,5 +1,7 @@
-package com.example.jwtv1;
+package com.example.jwtv1.controller;
 
+import com.example.jwtv1.dto.LoginDto;
+import com.example.jwtv1.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +17,7 @@ public class MemberController {
     private final MemberService memberService;
 
    @PostMapping("login")
-   public ResponseEntity<String> login(@RequestBody LoginRequest dto){
-       return ResponseEntity.ok().body(memberService.login(dto.getUsername(),""));
+   public ResponseEntity<String> login(@RequestBody LoginDto dto){
+       return ResponseEntity.ok().body(memberService.login(dto.getUsername()));
    }
 }
