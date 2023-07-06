@@ -2,6 +2,7 @@ package com.example.jwtv1;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -20,6 +21,8 @@ import java.util.List;
 public class JwtFilter extends OncePerRequestFilter {
 
     private final MemberService memberService;
+
+    @Value("${jwt.secret}")
     private final String secretKey;
 
     @Override

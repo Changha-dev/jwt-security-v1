@@ -16,6 +16,6 @@ public class MemberController {
 
    @PostMapping("login")
    public ResponseEntity<String> login(@RequestBody LoginRequest dto){
-       return ResponseEntity.ok().body(memberService.login(dto.getUserName(),""));
+       return ResponseEntity.ok().body(memberService.login(dto.getUsername(),""));
    }
 }

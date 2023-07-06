@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @NoArgsConstructor
 @Getter
 public class LoginRequest {
-    private String userName;
+    private String username;
 }
