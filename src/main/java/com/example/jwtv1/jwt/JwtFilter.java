@@ -20,8 +20,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class JwtFilter extends OncePerRequestFilter {
 
-    private final MemberService memberService;
-
     @Value("${jwt.secret}")
     private final String secretKey;
 
